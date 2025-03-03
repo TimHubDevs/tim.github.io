@@ -3,176 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damien Braun - Photography</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        /* Header Styles */
-        header {
-            padding: 20px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: white;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-        }
-
-        .contact-btn {
-            padding: 10px 25px;
-            background: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        /* Hero Section */
-        .hero {
-            margin-top: 100px;
-            padding: 50px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            margin: 20px 0;
-        }
-
-        .arrow-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 1.2rem;
-        }
-
-        /* Skills Row */
-        .skills {
-            height: 80px;
-            background: #f5f5f5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 40px;
-            margin: 50px 0;
-        }
-
-        /* Image Grid */
-        .image-grid {
-            height: 512px;
-            background: #ddd;
-            position: relative;
-            margin: 0 50px;
-        }
-
-        .image-grid img {
-            position: absolute;
-            width: 300px;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-        .image-grid img:nth-child(1) {
-            left: 10%;
-            top: 10%;
-        }
-
-        .image-grid img:nth-child(2) {
-            left: 30%;
-            top: 20%;
-            z-index: 2;
-        }
-
-        .image-grid img:nth-child(3) {
-            left: 50%;
-            top: 15%;
-        }
-
-        /* About Section */
-        .about {
-            margin: 200px 50px;
-            display: flex;
-            gap: 50px;
-        }
-
-        .about-content {
-            flex: 1;
-            padding: 20px;
-            background: #f9f9f9;
-        }
-
-        .profile-img {
-            width: 400px;
-            height: 500px;
-            object-fit: cover;
-        }
-
-        /* Portfolio Section */
-        .portfolio {
-            margin: 200px 50px;
-        }
-
-        .portfolio-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-
-        .carousel {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            height: 400px;
-            overflow: hidden;
-            transition: height 0.3s;
-        }
-
-        .carousel.expanded {
-            height: auto;
-        }
-
-        .portfolio-item img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        /* Footer */
-        footer {
-            background: #333;
-            color: white;
-            padding: 50px;
-            text-align: center;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 20px 0;
-        }
-    </style>
+    <title>Tymur - Game Developer</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h2>DAMIEN BRAUN</h2>
+        <h2>TYMUR</h2>
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About Me</a>
@@ -181,9 +18,10 @@
         <button class="contact-btn">Contact Me</button>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero" id="home">
-        <h3>PHOTOGRAPHER</h3>
-        <h1>DAMIEN BRAUN</h1>
+        <h3>GAME DEVELOPER</h3>
+        <h1>TYMUR</h1>
         <p>LET'S 
             <button class="arrow-btn">
                 WORK TOGETHER
@@ -192,6 +30,7 @@
         </p>
     </section>
 
+    <!-- Skills -->
     <div class="skills">
         <span>Unity 2D</span>
         <span>Unity 3D</span>
@@ -201,35 +40,38 @@
         <span>Animation</span>
     </div>
 
+    <!-- Image Grid -->
     <div class="image-grid">
-        <img src="game-dev1.jpg" alt="Game Development">
-        <img src="animation.jpg" alt="Animation">
-        <img src="vfx.jpg" alt="VFX">
+        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Game Dev">
+        <img src="https://images.unsplash.com/photo-1639747286286-3b1d331d5e9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Animation">
+        <img src="https://images.unsplash.com/photo-1614332287897-cdc05fa6d3e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="VFX">
     </div>
 
+    <!-- About Section -->
     <section class="about" id="about">
-        <img src="profile.jpg" class="profile-img" alt="Damien Braun">
+        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="profile-img" alt="Profile">
         <div class="about-content">
             <h2>ABOUT</h2>
-            <h3>I AM DAMIEN</h3>
+            <h3>I AM TYMUR</h3>
             <div class="intro-box">
                 <h4>Introduction</h4>
-                <p>My journey as a photographer...</p>
+                <p>Passionate game developer with 5+ years of experience...</p>
             </div>
             <div class="contact-box">
-                <h4>Contact Information</h4>
-                <p>damienbraun@example.com</p>
+                <h4>Contact</h4>
+                <p>tymur@example.com</p>
                 <div class="social-buttons">
-                    <button>Gmail</button>
-                    <button>LinkedIn</button>
-                    <button>GitHub</button>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
                 </div>
-                <button class="work-btn">Let's Work</button>
-                <button class="cv-btn">Download CV</button>
+                <button class="work-btn" onclick="window.open('mailto:tymur@example.com')">Let's Work</button>
+                <button class="cv-btn" onclick="window.open('cv.pdf')">Download CV</button>
             </div>
         </div>
     </section>
 
+    <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
         <div class="portfolio-header">
             <h2>PORTFOLIO</h2>
@@ -238,33 +80,76 @@
                 <button class="next">❯</button>
             </div>
         </div>
-        <p>EXPLORE MY PHOTOGRAPHY WORK</p>
+        <p>EXPLORE MY WORK</p>
         <div class="carousel">
-            <!-- Portfolio items here -->
+            <!-- 4 Portfolio Items -->
+            <div class="portfolio-item">
+                <img src="https://picsum.photos/400/300" alt="Project 1">
+                <h4>Project Alpha</h4>
+                <p>2023</p>
+                <a href="#">View Project →</a>
+            </div>
+			<div class="portfolio-item">
+                <img src="https://picsum.photos/400/300" alt="Project 1">
+                <h4>Project Alpha</h4>
+                <p>2023</p>
+                <a href="#">View Project →</a>
+            </div>
+			<div class="portfolio-item">
+                <img src="https://picsum.photos/400/300" alt="Project 1">
+                <h4>Project Alpha</h4>
+                <p>2023</p>
+                <a href="#">View Project →</a>
+            </div>
+			<div class="portfolio-item">
+                <img src="https://picsum.photos/400/300" alt="Project 1">
+                <h4>Project Alpha</h4>
+                <p>2023</p>
+                <a href="#">View Project →</a>
+            </div>
+            <!-- Додайте ще 3 аналогічні блоки -->
         </div>
         <button class="view-all">View All Works →</button>
     </section>
 
     <footer>
         <div class="footer-links">
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
         </div>
-        <p>© 2024 Damien Braun Photography. All rights reserved.</p>
+        <p>© 2024 Tymur. All rights reserved.</p>
     </footer>
 
     <script>
-        // Portfolio Toggle
+        // Слайдер
+        let currentSlide = 0;
+        const items = document.querySelectorAll('.portfolio-item');
+        const totalItems = items.length;
+
+        function showSlide(index) {
+            items.forEach(item => item.style.display = 'none');
+            items[index].style.display = 'block';
+        }
+
+        document.querySelector('.next').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalItems;
+            showSlide(currentSlide);
+        });
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalItems) % totalItems;
+            showSlide(currentSlide);
+        });
+
+        // Розгортання портфоліо
         const viewAllBtn = document.querySelector('.view-all');
         const carousel = document.querySelector('.carousel');
-        const controls = document.querySelector('.controls');
-
+        
         viewAllBtn.addEventListener('click', () => {
             carousel.classList.toggle('expanded');
-            controls.style.display = carousel.classList.contains('expanded') ? 'none' : 'flex';
             viewAllBtn.textContent = carousel.classList.contains('expanded') 
-                ? 'Hide All Works ←' 
-                : 'View All Works →';
+                ? 'Hide Works ←' 
+                : 'View All →';
         });
     </script>
 </body>
