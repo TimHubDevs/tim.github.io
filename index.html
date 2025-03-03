@@ -1,40 +1,271 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мій Стартап | Головна</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Damien Braun - Photography</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .contact-btn {
+            padding: 10px 25px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 100px;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 20px 0;
+        }
+
+        .arrow-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        /* Skills Row */
+        .skills {
+            height: 80px;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin: 50px 0;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            height: 512px;
+            background: #ddd;
+            position: relative;
+            margin: 0 50px;
+        }
+
+        .image-grid img {
+            position: absolute;
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .image-grid img:nth-child(1) {
+            left: 10%;
+            top: 10%;
+        }
+
+        .image-grid img:nth-child(2) {
+            left: 30%;
+            top: 20%;
+            z-index: 2;
+        }
+
+        .image-grid img:nth-child(3) {
+            left: 50%;
+            top: 15%;
+        }
+
+        /* About Section */
+        .about {
+            margin: 200px 50px;
+            display: flex;
+            gap: 50px;
+        }
+
+        .about-content {
+            flex: 1;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+
+        .profile-img {
+            width: 400px;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            margin: 200px 50px;
+        }
+
+        .portfolio-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .carousel {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            height: 400px;
+            overflow: hidden;
+            transition: height 0.3s;
+        }
+
+        .carousel.expanded {
+            height: auto;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Ласкаво просимо до <span>Мого Стартапу</span></h1>
-        <p>Збільшуйте продуктивність з нашим інноваційним рішенням!</p>
-        <a href="#contact" class="cta-button">Спробувати безкоштовно</a>
+        <h2>DAMIEN BRAUN</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+        </nav>
+        <button class="contact-btn">Contact Me</button>
     </header>
 
-    <section class="features">
-        <div class="feature">
-            <h2>Швидко</h2>
-            <p>Виконуйте задачі на 200% швидше.</p>
-        </div>
-        <div class="feature">
-            <h2>Надійно</h2>
-            <p>Захист даних 24/7.</p>
+    <section class="hero" id="home">
+        <h3>PHOTOGRAPHER</h3>
+        <h1>DAMIEN BRAUN</h1>
+        <p>LET'S 
+            <button class="arrow-btn">
+                WORK TOGETHER
+                <span>→</span>
+            </button>
+        </p>
+    </section>
+
+    <div class="skills">
+        <span>Unity 2D</span>
+        <span>Unity 3D</span>
+        <span>VFX</span>
+        <span>Figma Design</span>
+        <span>Level Design</span>
+        <span>Animation</span>
+    </div>
+
+    <div class="image-grid">
+        <img src="game-dev1.jpg" alt="Game Development">
+        <img src="animation.jpg" alt="Animation">
+        <img src="vfx.jpg" alt="VFX">
+    </div>
+
+    <section class="about" id="about">
+        <img src="profile.jpg" class="profile-img" alt="Damien Braun">
+        <div class="about-content">
+            <h2>ABOUT</h2>
+            <h3>I AM DAMIEN</h3>
+            <div class="intro-box">
+                <h4>Introduction</h4>
+                <p>My journey as a photographer...</p>
+            </div>
+            <div class="contact-box">
+                <h4>Contact Information</h4>
+                <p>damienbraun@example.com</p>
+                <div class="social-buttons">
+                    <button>Gmail</button>
+                    <button>LinkedIn</button>
+                    <button>GitHub</button>
+                </div>
+                <button class="work-btn">Let's Work</button>
+                <button class="cv-btn">Download CV</button>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Зв’яжіться з нами</h2>
-        <form action="https://formspree.io/f/ваша-пошта" method="POST">
-            <input type="email" name="email" placeholder="Ваш email" required>
-            <textarea name="message" placeholder="Повідомлення"></textarea>
-            <button type="submit">Надіслати</button>
-        </form>
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-header">
+            <h2>PORTFOLIO</h2>
+            <div class="controls">
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </div>
+        <p>EXPLORE MY PHOTOGRAPHY WORK</p>
+        <div class="carousel">
+            <!-- Portfolio items here -->
+        </div>
+        <button class="view-all">View All Works →</button>
     </section>
 
     <footer>
-        <p>© 2023 Мій Стартап. Усі права захищені.</p>
+        <div class="footer-links">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <p>© 2024 Damien Braun Photography. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Portfolio Toggle
+        const viewAllBtn = document.querySelector('.view-all');
+        const carousel = document.querySelector('.carousel');
+        const controls = document.querySelector('.controls');
+
+        viewAllBtn.addEventListener('click', () => {
+            carousel.classList.toggle('expanded');
+            controls.style.display = carousel.classList.contains('expanded') ? 'none' : 'flex';
+            viewAllBtn.textContent = carousel.classList.contains('expanded') 
+                ? 'Hide All Works ←' 
+                : 'View All Works →';
+        });
+    </script>
 </body>
 </html>
